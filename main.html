@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <!-- Font Awesome CSS-->
+    <link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="res/bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div id="main" class="page">
+            <h1 style="opacity: 0; transition: opacity 2s ease-in-out;">Welcome to ChatGPT!</h1>
+            <p style="opacity: 0; transition: opacity 2s ease-in-out;">
+                ChatGPT is an advanced language model powered by OpenAI. It can understand and generate human-like text based on the input provided. It can be used for a wide range of applications such as drafting emails, writing code, answering questions, creating conversational agents, tutoring, language translation, simulating characters for video games, and much more.
+            </p>
+            <script>
+            window.onload = function() {
+                document.querySelector('h1').style.opacity = '1';
+                document.querySelector('p').style.opacity = '1';
+            }
+            </script>
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="profile" class="page">
+            <h1>Basic Information</h1>
+            <div class="profile-content">
+                <div class="photo-container">
+                    <img src="https://i.328888.xyz/2023/03/29/iWM95y.md.png" alt="Profile Photo">
+                </div>
+                <div class="info-container">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span>Name: John Doe</span>
+                    </div>
+                    <!-- Add more info items here -->
+                    <div class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Age: 30</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-venus-mars"></i>
+                        <span>Gender: Male</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: +1 (123) 456-7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: john.doe@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-qq"></i>
+                        <span>QQ: 123456789</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Residence: New York, USA</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education: Bachelor's Degree</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-university"></i>
+                        <span>School: <a href="https://www.nankai.edu.cn/" target="_blank">Nankai University</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-book"></i>
+                        <span>Major: Computer Science</span>
+                    </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </div>
+        <div id="skills" class="page">
+            <h1>Professional Skills</h1>
+            <!-- Add your professional skills here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="education" class="page">
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+            <h1>Education</h1>
+            <!-- Add your education history here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="contact" class="page">
+            <h1>Contact</h1>
+            <!-- Add your contact information here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </div>
+    <div class="dot-navigation">
+        <span class="dot" onclick="navigateTo('main')"></span>
+        <span class="dot" onclick="navigateTo('profile')"></span>
+        <span class="dot" onclick="navigateTo('skills')"></span>
+        <span class="dot" onclick="navigateTo('education')"></span>
+        <span class="dot" onclick="navigateTo('contact')"></span>
+    </div>
+    <script src="js/photo-rotation.js"></script>
+</body>
+</html>
